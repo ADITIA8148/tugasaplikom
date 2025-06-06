@@ -1,0 +1,123 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.header h1 {
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #34495e;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 12px 24px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #1abc9c;
+}
+
+.sidebar.active {
+  width: 200px;
+}
+
+
+.content {
+  display: none;       
+  padding: 2rem;
+  text-align: center;
+}
+
+.content.active {
+  display: block;      
+}
+
+.namaanggota {
+  text-align: center;
+}
+
+.keterangan {
+  text-align: left;
+  font-style: italic;
+}
+
+.hasilpercobaan{
+    text-align: left;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+}
+
+/* Tombol kontrol */
+button {
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btnon {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btnoff {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
